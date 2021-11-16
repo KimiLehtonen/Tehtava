@@ -16,8 +16,8 @@ Loin ensikisi uuden repositoryn gittiin, jonka jälkeen loin sinne tämän .md p
 ## b) Pull first. Tee useita muutoksia git-varastoosi. Tee muutama muutos, jossa yksi commmit koskee useamapaa tiedostoa. Anna hyvät kuvaukset (commit message), yksi enganninkielinen ause imperatiivisessa (määräysmuodossa)"add top level menu to Foobar synchronizer"
 
 Ensimmäisenä muutoksena varastooni, on tämän tehtävän kirjoittaminen joka siis muokkaa git-varastoni tehtava3.md tiedostoa. Toisena muutoksena luon uuden Markdown tiedoston komenolla
-	micro uusitiedosto.md
-Jonka jälkeen lisään sen repositoryyn kaikille komenoilla **git add uusitiedosto.md** , **git commit** ja **git push**. Nyt muutokset näkyvät kaikille githubissa:
+	**micro uusitiedosto.md**
+Jonka jälkeen lisään sen repositoryyn kaikille komenoilla **git pull** , **git add uusitiedosto.md** , **git commit** ja **git push**. Nyt kaikki muutokset näkyvät githubissa:
 
 ![Image](https://imgur.com/DKbO0Bp.png)
 
@@ -35,3 +35,7 @@ git blame:illä voidaan katsoa, kuka on muokannut viimeksi vaikka jotain tiedost
 
 ![image](https://imgur.com/cG37U5j.png)  
 
+## d) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset 'git reset --hard'. Huomaa, että tässä toiminossa ei ole peruutusnappia. 
+
+Tee kuvitteelisen tyhmän muutoksen gittiin, jossa lisään uusitiedosto.md:seen jotakin esimerkiksi ohjelman salaisuuksia joita ei tulisi julkistaa julkisessa repositoryssa. Tämän jälkeen huomattuani virheeni, ajan komennon **git reset --hard** joka tuhoaa äsköiset muutokset
+ 
