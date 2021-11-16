@@ -17,8 +17,7 @@ Loin ensikisi uuden repositoryn gittiin, jonka jälkeen loin sinne tämän .md p
 
 Ensimmäisenä muutoksena varastooni, on tämän tehtävän kirjoittaminen joka siis muokkaa git-varastoni tehtava3.md tiedostoa. Toisena muutoksena luon uuden Markdown tiedoston komenolla
 	micro uusitiedosto.md
-Jonka jälkeen lisään sen repositoryyn kaikille komenoilla
-	git add uusitiedosto.md
-	git commit 
-	git push
+Jonka jälkeen lisään sen repositoryyn kaikille komenoilla **git add uusitiedosto.md** , **git commit** ja **git push**. Nyt muutokset näkyvät kaikille githubissa:
+![Image](https://imgur.com/DKbO0Bp.png)
+
 	
