@@ -37,5 +37,28 @@ git blame:illä voidaan katsoa, kuka on muokannut viimeksi vaikka jotain tiedost
 
 ## d) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset 'git reset --hard'. Huomaa, että tässä toiminossa ei ole peruutusnappia. 
 
-Tee kuvitteelisen tyhmän muutoksen gittiin, jossa lisään uusitiedosto.md:seen jotakin esimerkiksi ohjelman salaisuuksia joita ei tulisi julkistaa julkisessa repositoryssa. Tämän jälkeen huomattuani virheeni, ajan komennon **git reset --hard** joka tuhoaa äsköiset muutokset
- 
+Tee kuvitteelisen tyhmän muutoksen gittiin, jossa lisään uusitiedosto.md:seen jotakin esimerkiksi ohjelman salaisuuksia joita ei tulisi olla julkisessa repositoryssa.
+
+![Image](https://i.imgur.com/mSgKuSG.png)
+
+Sen jälkeen lisään sen gittiin, mutta en aja committia vaan teen komennon **git reset --hard**
+
+![Image](https://i.imgur.com/tf1axg4.png)
+
+Nyt gitti on palauttanut itsensä jälkimmäiseen commit versioonsa, ja uusitiedostosta on poistunut tekemäni virheet
+
+![Image](https://i.imgur.com/SzyfCt7.png)
+
+## e) Tee uusi salt-tila (formula,moduli,infraa koodina)(eli uusi tiedosto esim. srv/salt/terontila/init.sls)Voit tehdä yksinkertaisen parin funktion (pkg,file..)tilan, tai edistyneemmin asentaa ja konfiguroida minkä vaan uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. 
+
+Aloitan salt-tilan luomisen tekemällä /srv/salt/kimintila/ kansion komenolla **sudo mkdir -p /srv/salt/kimintila**. Sen jälkeen luon sinne init.sls tiedoston komenolla **sudoedit /srv/salt/kimintila/init.sls** Teen salt- tilan joka lisää käyttäjän Lehtonen, sekä luo tekstitiedoston "heikimi" tmp kansioon.
+
+![Image](https://i.imgur.com/C6l4rjP.png)
+
+Testaan vielä että se toimii ajamalla komennon
+	sudo salt '*' state.apply kimintila
+
+![Image](https://imgur.com/wMWRAIF.png)
+
+Saltti onnistui tekemään muutokset.  
+
